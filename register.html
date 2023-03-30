@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>online voting system-resistation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/stylesheet.css"> -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <style>
+        #address{
+            width:30%
+        }
+        #imagepart{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+        #role{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+    </style>
+ <div id="heardersection"></div>
+    <h1> online voting</h1>
+    <hr>
+</div>
+<div id="heard">
+    <h2>e voting on progess</h2><hr>
+    
+</div>
+<div id="bodysection">
+    <h2>Restation</h2>
+    <forms action="../api/register.php" method=" POST">
+    <input type="text" name="name" placeholder="enter name">
+    <input type="number" name="mobil"  placeholder="enter mobile"><br><br>
+    <input type="password" name="passward"  placeholder="passward">
+    <input type="passward" name="passward"  placeholder="conformpassward"><br><br>
+    <center>
+    <div id="imagepart">
+       upload image: <input type="file" name="photo" >
+    </div>
+    <br><br>
+    <div id="role">
+    select role:<select name="role"><br><br>
+        <option value="1">voter</option>
+        <option value="2">group</option>
+    </select>
+    
+    </div>
+</center>
+    <br>
+    <button> resister</button><br><br>
+   <!-- already user?<a herf="http://127.0.0.1:5500/intex.html">login Here</a>-->
+   new user?<input type="submit" value="login" class="been" onclick="document.location.href='http://127.0.0.1:5500/log.html';"/>
+    
+</forms>
+</div>
+</body>
+</html>
